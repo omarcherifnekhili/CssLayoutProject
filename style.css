@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: inherit;
+}
+:root{
+    --grey: #747474;
+    --tile: #00b39b; 
+    --dark-blue: #1b2734;
+    --sky-blue: #3d83df;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--grey);
+    padding: 1.5rem 5rem ;
+}
+img{
+    max-width: 250px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#logo{
+    width: 200px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+#features div{
+    color: white;
+    padding: 20px;
+}
+#features div:nth-child(1){
+    background-color: var(--tile);
+}
+#features div:nth-child(2){
+    background-color: var(--sky-blue);
+}
+#features div:nth-child(3){
+    background-color: var(--dark-blue);
+}
+/* layout */
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+} 
+.flex-row{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.flex-row div{
+    flex:0 1 300px;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+
+}
+#stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#stats div{
+    flex: 250px;
+}
+.First{
+    color: #00b39b;
+}
+
+.center-row{
+    justify-content: center;
+}
+/* layout-end */
+
+
+@media(max-width: 500px){
+  .flex, .flex-row{
+    flex-direction: column;
+  }
+}
